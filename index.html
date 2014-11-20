@@ -52,6 +52,7 @@ for Android</a> app. App Inventor apps can access this service using the TinyWeb
 		 <th>Value</th>
 		 <th>Created (GMT)</th>
 	  </tr>
+	  {% entryList = sorted(entryList,key=attrgetter('value'),reverse=True)%}
 	  {% for entry in entryList %}
 	  <tr>
 	         <td>{{entry.tag}}</td>
